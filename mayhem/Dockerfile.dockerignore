@@ -1,0 +1,6 @@
+# Commit-image build context: the full repo incl. .git, minus editor/OS cruft.
+# (No build/ or *.o rules: upstream tracks build/t-digest-c/ and ignores objects itself.)
+**/__pycache__/
+.DS_Store
+*.swp
+*~

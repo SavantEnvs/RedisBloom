@@ -1,0 +1,9 @@
+project: savantenvs/RedisBloom
+target: fuzz_bf_loadchunk
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_bf_loadchunk/testsuite
+cmds:
+  - cmd: /mayhem/bin/fuzz_bf_loadchunk
+    libfuzzer: true
+    timeout: 10
